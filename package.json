@@ -1,0 +1,32 @@
+{
+  "author": "Dom Harrington <dom@harrington-mail.com>",
+  "name": "pliers-npm-security-check",
+  "description": "Checks the security status of modules in your package.json against the nodesecurity.io web service",
+  "version": "0.0.0",
+  "tags": [
+    "pliers",
+    "security",
+    "vulnerability",
+    "packages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:domharrington/pliers-npm-security-check"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
+  "main": "./pliers-npm-security-check",
+  "scripts": {
+    "lint": "./node_modules/.bin/jshint . --reporter=./node_modules/jshint-full-path/index.js"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "dependencies": {
+    "request": "~2.33.0"
+  },
+  "devDependencies": {
+    "jshint-full-path": "~1.1.1"
+  }
+}
