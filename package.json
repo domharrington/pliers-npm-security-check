@@ -2,7 +2,7 @@
   "author": "Dom Harrington <dom@harrington-mail.com>",
   "name": "pliers-npm-security-check",
   "description": "Checks the security status of modules in your package.json against the nodesecurity.io web service",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "tags": [
     "pliers",
     "security",
