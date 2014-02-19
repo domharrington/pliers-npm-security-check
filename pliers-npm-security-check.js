@@ -1,9 +1,9 @@
 var fs = require('fs')
   , request = require('request')
 
-module.exports = function (pliers, name) {
+module.exports = function (pliers) {
 
-  pliers(name || 'npmSecurityCheck', function (done) {
+  return function (done) {
     fs.createReadStream('./npm-shrinkwrap.json').pipe(
       request.post('https://nodesecurity.io/validate/shrinkwrap', function (error, res) {
         if (error) done(new Error('Problem contacting nodesecurity.io web service'))
@@ -15,5 +15,6 @@ module.exports = function (pliers, name) {
           })
         }
       }))
-  })
+  }
+
 }
