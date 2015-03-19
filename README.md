@@ -4,7 +4,9 @@ Checks the security status of modules in your package.json against the nodesecur
 
 ## Installation
 
-      npm install pliers-npm-security-check
+```
+npm install pliers-npm-security-check
+```
 
 ## Usage
 
