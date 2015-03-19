@@ -1,4 +1,4 @@
-# pliers-npm-security-check
+# [pliers](https://pliersjs.github.io/)-npm-security-check
 
 Checks the security status of modules in your package.json against the nodesecurity.io web service
 
